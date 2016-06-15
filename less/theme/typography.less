@@ -1,0 +1,111 @@
+
+
+/*FONT*/
+@font-face {
+    font-family: 'tesco';
+    src: url('../font/Tesco_W_Rg.ttf') format('ttf');
+         //url('../font/tescodisplay_w_rg-webfont.woff') format('woff');
+/*    font-weight: normal;
+    font-style: normal;*/
+}
+
+@font-face {
+    font-family: 'tescoMedium';
+    src: url('../font/Tesco_W_Md.ttf') format('ttf');
+         //url('../font/tescodisplay_w_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@tesco: tesco, sans-serif;
+@tescoMedium: tescoMedium, sans-serif;
+@tescoOld: tescoOld, sans-serif;
+
+
+.fonttype{
+  font-family: @tesco;
+  font-weight:normal;
+}
+
+body{
+  .fonttype;
+}
+
+/* HEADERS */
+
+.hh-xl {
+  .fonttype;
+  font-size: 34px;
+  @media  @desktop{
+    font-size: 34px;
+  }
+  @media  @tablet{
+    font-size: 24px;
+  }
+  @media @mobile{
+    font-size: 32px;
+  }
+}
+
+.hh-l {
+    font-size: 30px;
+}
+
+.hh-m {
+    .fonttype;
+    font-size: 28px;
+}
+
+.hh-s {
+    .fonttype;
+    font-size: 24px;
+    @media @tablet{
+      font-size: 16px;
+    }
+}
+
+.hh-xs {
+    .fonttype;
+    font-size: 22px;
+}
+
+.hh-xxs {
+    .fonttype;
+    font-size: 20px;
+}
+
+
+
+/*TEXT*/
+
+
+.tt-xxl {
+    font-size: 20px;
+}
+
+.tt-xl {
+    font-size: 18px;
+}
+
+.tt-l {
+    font-size: 16px;
+}
+
+.tt-l-m {
+    font-size: 17px;
+}
+
+.tt-m {
+    font-size: 14px;
+}
+
+.tt-s {
+    font-size: 12px;
+}
+
+.tt-xs {
+    font-size: 10px;
+}
