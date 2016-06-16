@@ -1,4 +1,18 @@
+.carousel-main{
+  max-width: 1079px;
+    margin: auto;
+    width: 100%;
+}
 
+.row.carousel-row{
+    margin-left: -8px;
+    margin-right: -8px;
+    max-width: 1078px;
+    @media @tablet{
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+}
 
 /*Carousel*/
 
@@ -44,6 +58,7 @@
     min-height: 351px;
     display: flex;
     align-items: center;
+    padding: 0 16px;
     @media @desktop-xl{
       min-height: 351px;
       display: flex;
@@ -63,7 +78,7 @@
       display: flex;
       align-items: center;
       min-height:220px;
-      padding: 0 0.6%;
+      padding: 0 16px;
     }
     @media @mobile {
       display: flex;
@@ -134,4 +149,55 @@
 
 .carousel-control .carousel-container{
   float:  right;
+}
+
+/*BACKGROUND TEST*/
+
+.carousel-slide{
+  &.slide-1{
+    background-image: url(../img/left/50_50_Easter_lamb.jpg);
+  }
+  &.slide-2{
+    background-image: url(../img/left/50_50Christmas.jpg);
+  }
+  &.slide-3{
+    background-image: url(../img/left/50_50Christmas1.jpg);
+  }
+  &.slide-4{
+    background-image: url(../img/left/50_50Easter_lamb_1.jpg);
+  }
+  &.slide-5{
+    background-image: url(../img/left/50_50Easter.jpg);
+  }
+  &.slide-6{
+    background-image: url(../img/left/50_50Easter1.jpg);
+  }
+  &.slide-7{
+    background-image: url(../img/left/50_50Fathersday.jpg);
+  }
+  &.slide-8{
+    background-image: url(../img/left/50_50Halloween.jpg);
+  }
+  &.slide-9{
+    background-image: url(../img/center/Christmas-example-v1.1.jpg);
+  }
+  &.slide-10{
+    background-image: url(../img/center/Christmas-example-v1.2.jpg);
+  }
+  &.slide-11{
+    background-image: url(../img/center/Christmas-example-v1.3.jpg);
+  }
+  &.slide-12{
+    background-image: url(../img/center/Easter-example-v2.1.jpg);
+  }
+  &.slide-13{
+    background-image: url(../img/center/FathersDay-example-v4.1.jpg);
+  }
+  &.slide-14{
+    background-image: url(../img/center/FathersDay-example-v4.2.jpg);
+  }
+  &.slide-15{
+    background-image: url(../img/center/Halloween-example-v3.1.jpg);
+  }
+
 }
