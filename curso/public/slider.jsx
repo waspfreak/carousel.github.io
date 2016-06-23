@@ -11,15 +11,18 @@ var Slider = React.createClass({
     var eventPing = this.props.eventPing;
     var eventColor = this.props.eventColor;
 
+
     return(
       <div>
       <section className="carousel">
-          <div className="carousel-slide" style={eventImg}>
+          <div className="carousel-slide">
             <div className="ping-container">
               <img src={eventPing} alt="" />
             </div>
 
-            <div className="carousel-wrapp col-sm-6 bg-easter">
+            <div className="carousel-stamp" style={eventImg}></div>
+
+            <div className="carousel-wrapp bg-easter">
               <div className="carousel-content " style={eventColor}>
                 <h2 className="hh-xl event-title">{eventTitle}</h2>
                 <p className="hh-s event-description">{eventDescription}</p>

@@ -15,43 +15,45 @@
 }
 
 /*Carousel*/
+@media @large-only{
+    .carousel-slide{
+      min-height: 351px;
+    }
+}
+
+
+@media @medium-small-only{
+  .carousel-slide{
+    .carousel-stamp{
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+    }
+    .carousel-wrapp{
+      min-height: 250px;
+      padding-top: 3%;
+    }
+  }
+}
+
 
 .carousel-slide{
-  background: url(../img/event-bg.jpg);
-  background-position-x: right;
-  background-repeat: no-repeat;
-  background-size: 50%;
   border-left: 1px solid @line-dark;
   border-right: 1px solid @line-dark;
   border-top: 1px solid @line-dark;
   position: relative;
   overflow: hidden;
-  @media @landscape{
-    background-position: 0px -100%;
+  min-height: 500px;
+  @media @small {
+    min-height: 525px;
   }
-  @media @desktop{
-    background-size: 56%;
-  }
-  @media @tablet-xl{
-    background-size: 73%;
-    background-position-x: 131%;
-  }
-  @media @tablet{
-    background-size: 50%;
-  }
-  @media @mobile {
-    background-size: 100%;
-    background-position-y: -20px;
-    background-position-x: center;
-    min-height: 500px;
-  }
-  @media @mobile-xs{
-    background-size: 100%;
-    background-position-y: -65px;
-    background-position-x: center;
-  }
-  @media @mobile-xxs{
-    min-height: 400px;
+  .carousel-stamp{
+    @media @small {
+      background-size: cover;
+      background-position-y: center;
+      background-position-x: center;
+      height: 200px;
+    }
   }
 
   .carousel-wrapp{
@@ -64,26 +66,14 @@
       display: flex;
       align-items: center;
     }
-    @media @desktop{
+    @media @large{
       display: flex;
       align-items: center;
       min-height: 351px;
     }
-    @media @tablet-xl{
+    @media @small {
       display: flex;
-      align-items: center;
-      min-height: 351px;
-    }
-    @media @tablet {
-      display: flex;
-      align-items: center;
-      min-height:220px;
-      padding: 0 16px;
-    }
-    @media @mobile {
-      display: flex;
-      align-items: flex-start;
-      padding-top: 10%;
+      align-items: center
       bottom: 0;
       min-height: 325px;
       /*padding-top:5.2% !important;*/
@@ -150,6 +140,39 @@
 .carousel-control .carousel-container{
   float:  right;
 }
+
+@media @medium{
+  .carousel-slide{
+    background-position: right;
+    background-size: 50%;
+    min-height: 219px;
+    .hh-xl{
+      font-size: 24px;
+    }
+
+    .carousel-stamp {
+    position: absolute;
+    right: 0;
+    height: 219px;
+    width: 50%;
+    background-size: cover;
+    }
+    .carousel-wrapp{
+      display: flex;
+      align-items: center;
+      min-height:219px;
+      padding: 0 16px;
+      width: 50%;
+    }
+    .ping-container{
+      max-width:100px;
+      max-height:100px;
+    }
+  }
+
+}
+
+
 
 /*BACKGROUND TEST*/
 
