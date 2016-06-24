@@ -28,29 +28,29 @@
           float: left;
 
           .proposition-slider__info-wrapp{
-            align-items: center;
+            align-items: flex-start;
             background: antiquewhite;
             display: flex;
+            float: left;
             height: 265px;
             position: relative;
             width: 100%;
             padding: 16px;
             @media @medium-small-only{
-              background: red;
+              align-items: center;
             }
             @media @medium {
-              background: green;
               width: 50%;
               height: 219px;
+              align-items: center;
             }
             @media @large-min{
-              background: brown;
+              align-items: center;
               width: 50%;
               height: 351px;
             }
 
             .proposition-slider__info{
-              float: left;
               margin: 0;
               text-align: left;
               width: 100%;
@@ -76,6 +76,17 @@
                 @media @large-min {
                   font-size: 24px;
                 }
+              }
+              .event-button{
+                  margin-top: 16px;  
+
+                @media @medium{
+                  margin-top: 24px;
+                }
+                @media @large-min{
+                  margin-top: 24px;
+                }
+
               }
               .event-terms{
                 bottom: -5px;
