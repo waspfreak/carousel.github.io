@@ -10,47 +10,53 @@ var Slider = React.createClass({
     var eventImg = this.props.eventImg;
     var eventPing = this.props.eventPing;
     var eventColor = this.props.eventColor;
+    var eventBottonStyle = this.props.eventBottonStyle;
 
 
     return(
-      <div>
-      <section className="slider">
-          <div className="slider-slide">
-            <div className="ping-container">
-              <img src={eventPing} alt="" />
-            </div>
+      <article className="proposition-slider">
+        <div  className="proposition-slider__slides">
+          <div className="proposition-slider__overflow">
+            <div className="inner">
 
-            <div className="slider-stamp" style={eventImg}></div>
+                    <div className="ping-container">
+                      <img src={eventPing} alt="" />
+                    </div>
 
-            <div className="slider-wrapp bg-easter">
-              <div className="slider-content " style={eventColor}>
-                <h2 className="hh-xl event-title">{eventTitle}</h2>
-                <p className="hh-s event-description">{eventDescription}</p>
-                <a className="button-primary event-button" href={eventLink}>{eventBotton}</a>
-                <p className="tt-m event-terms">{eventTerms}</p>
+
+                    <article className="proposition-slider__item">
+                      <div className="proposition-slider-img_container" style={eventImg}></div>
+                      <div className="proposition-slider__info-wrapp" style={eventColor}>
+                        <div className="info proposition-slider__info">
+                          <h1 className="hh-xl event-title">{eventTitle}</h1>
+                          <p className="hh-s event-description">{eventDescription}</p>
+                          <a className="button-primary event-button" style={eventBottonStyle} href="{eventLink}">{eventBotton}</a>
+                          <p className="tt-m event-terms">{eventTerms}</p>
+                        </div>
+                      </div>
+                    </article>
+
+                </div>
               </div>
             </div>
-
-          </div>
-
-      </section>
-    </div>
+        </article>
     );
 
   }
 });
 
-var eventTitle = "Make Mother's Day special fertgfdhert"
-var eventDescription = "Do chartreuse 3 wolf moon, man bun drinking vinegar tilde laboris quis kickstarter"
-var eventBotton = "Shop Now"
-var eventLink = "http://waspfreak.github.io/html/slider/"
-var eventTerms = "Subject to availability."
-var imgUrl = "http://waspfreak.github.io/img/event-bg.jpg"
+var eventTitle = "Fresh BBQ meat";
+var eventDescription = "Enjoy a Summer feast with family and friends";
+var eventBotton = "Shop Now";
+var eventLink = "http://waspfreak.github.io/html/slider/";
+var eventTerms = "Subject to availability.";
+var imgUrl = "http://waspfreak.github.io/curso/public/img/BBQ-stamp-s.jpg";
 var eventImg = {backgroundImage: 'url(' + imgUrl + ')' };
-var eventPing = "/img/ping.png";
-var background = "#cdeded";
-var textColor = "#2b807e"
-var eventColor = {color: textColor, background: background }
+var eventPing = "http://waspfreak.github.io/curso/public/img/ping.png";
+var background = "#eb6b3c;";
+var textColor = "#fff";
+var eventColor = {color: textColor, background: background };
+var eventBottonStyle = {background: '#691c00'}
 
 
 ReactDOM.render(
@@ -64,6 +70,7 @@ ReactDOM.render(
     eventImg={eventImg}
     eventPing={eventPing}
     eventColor={eventColor}
+    eventBottonStyle={eventBottonStyle}
   />,
   document.getElementById('app')
 );
