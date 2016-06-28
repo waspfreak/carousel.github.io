@@ -26,6 +26,7 @@
         .proposition-slider__item{
           width: 20%; //need be 20% for slides the container
           float: left;
+          position: relative;
 
           .proposition-slider__info-wrapp{
             align-items: flex-start;
@@ -109,10 +110,12 @@
             @media @medium {
               width: 50%;
               height: 219px;
+              background-size: 150%;
             }
             @media @large-min{
               width: 50%;
               height: 351px;
+              background-size: initial;
             }
             .proposition-slider-img{
               float: right;
