@@ -19,12 +19,8 @@ var Slider = React.createClass({
           <div className="proposition-slider__overflow">
             <div className="inner">
 
-                    <div className="ping-container">
-                      <img src={eventPing} alt="" />
-                    </div>
-
-
                     <article className="proposition-slider__item">
+                      
                       <div className="proposition-slider-img_container" style={eventImg}></div>
                       <div className="proposition-slider__info-wrapp" style={eventColor}>
                         <div className="info proposition-slider__info">

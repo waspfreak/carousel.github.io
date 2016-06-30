@@ -149,10 +149,10 @@
 
   .proposition-slider__active {
     margin: 0;
-    width: 200px;
+    width: 122px;
     float: right;
     position: absolute;
-    right: 40px;
+    right: 42px;
     z-index: 10;
     text-align: center;
     height: 50px;
@@ -206,10 +206,11 @@
 
 #slide1:checked ~ .proposition-slider__controls label:nth-child(2),
 #slide2:checked ~ .proposition-slider__controls label:nth-child(3),
-#slide3:checked ~ .proposition-slider__controls label:nth-child(4),
-#slide4:checked ~ .proposition-slider__controls label:nth-child(5),
-#slide5:checked ~ .proposition-slider__controls label:nth-child(1) {
-	background: #fff url('../img/next.png') 6px 7px no-repeat;
+#slide3:checked ~ .proposition-slider__controls label:nth-child(1),
+// #slide4:checked ~ .proposition-slider__controls label:nth-child(5),
+// #slide5:checked ~ .proposition-slider__controls label:nth-child(1)
+{
+	//background: #fff url('../img/next.png') 6px 7px no-repeat;
 	float: right;
 	margin: 7px 10px 0 0;
 	display: block;
@@ -218,25 +219,40 @@
   background-size: 50%;
   cursor: pointer;
 }
+#slide1:checked ~ .proposition-slider__controls label:nth-child(2)::before,
+#slide2:checked ~ .proposition-slider__controls label:nth-child(3)::before,
+#slide3:checked ~ .proposition-slider__controls label:nth-child(1)::before{
+  content: '\e842';
+  font-family: 'fontello';
+}
 
-#slide1:checked ~ .proposition-slider__controls label:nth-child(5),
+#slide1:checked ~ .proposition-slider__controls label:nth-child(3),
 #slide2:checked ~ .proposition-slider__controls label:nth-child(1),
 #slide3:checked ~ .proposition-slider__controls label:nth-child(2),
-#slide4:checked ~ .proposition-slider__controls label:nth-child(3),
-#slide5:checked ~ .proposition-slider__controls label:nth-child(4) {
-	background: #fff url('../img/prev.png') 6px 7px no-repeat;
+// #slide4:checked ~ .proposition-slider__controls label:nth-child(3),
+// #slide5:checked ~ .proposition-slider__controls label:nth-child(4)
+{
+	//background: #fff url('../img/prev.png') 6px 7px no-repeat;
   background-size: 50%;
   border-radius: 100px;
   border: 2px solid #008dc8;
   cursor: pointer;
   display: block;
-  right: 236px;
+  right: 167px;
   position: absolute;;
   margin: 7px 0 0 0;
   @media @small-max{
       margin: 7px 0 0 40%;
   }
 
+}
+
+#slide1:checked ~ .proposition-slider__controls label:nth-child(3)::before,
+#slide2:checked ~ .proposition-slider__controls label:nth-child(1)::before,
+#slide3:checked ~ .proposition-slider__controls label:nth-child(2)::before,
+{
+   content: '\e843';
+   font-family: 'fontello';
 }
 
 #slide1:checked ~ .proposition-slider__active label:nth-child(1),
