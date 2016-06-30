@@ -66,7 +66,7 @@ var Slider = React.createClass({
                 <div className="inner">
 
 
-                    <SliderItem eventTitle={eventTitle} eventDescription={eventDescription} eventImg={eventImg} eventImg={eventImg2} eventPing={eventPing}
+                    <SliderItem eventTitle={eventTitle} eventDescription={eventDescription} eventImg={eventImg} eventImg={eventImg} eventPing={eventPing}
                     eventColor={eventColor} eventBottonStyle={eventBottonStyle} eventLink={eventLink} eventBotton={eventBotton} eventBottonStyle={eventBottonStyle} eventTerms={eventTerms}/>
 
                     <SliderItem eventTitle={eventTitle2} eventDescription={eventDescription2} eventImg={eventImg2} eventPing={eventPing2}
